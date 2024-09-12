@@ -1,0 +1,3 @@
+IGB190 uni project, given a base and then asked to create an ARPG from said base
+
+Working in a group of 4
