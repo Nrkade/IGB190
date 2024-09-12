@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MonsterSpawnManager : MonoBehaviour
 {
-    public float spawnDensity = 1.0f;
+    public float spawnDensity = 1.5f;
     public List<Monster> monstersToSpawn;
 
     private List<EnemySpawn> unitSpawnCache = new List<EnemySpawn>();
@@ -84,7 +84,7 @@ public class MonsterSpawnManager : MonoBehaviour
 
         MonsterSpawnArea[] spawnLocations = GameObject.FindObjectsOfType<MonsterSpawnArea>();
 
-        float modifier = 0.02f;
+        float modifier = 0.021f;
         float total = 0;
         foreach (MonsterSpawnArea trigger in spawnLocations)
         {

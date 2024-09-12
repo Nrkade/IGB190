@@ -13549,9 +13549,9 @@ MonoBehaviour:
   unitName: Barbarian
   health: 500
   resource: 0
-  baseDamage: 20
+  baseDamage: 50
   baseAttacksPerSecond: 1.5
-  baseMaxHealth: 200
+  baseMaxHealth: 300
   baseMaxResource: 100
   baseMovementSpeed: 3
   baseArmor: 0
