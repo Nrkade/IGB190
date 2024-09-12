@@ -84,7 +84,7 @@ public class MonsterSpawnManager : MonoBehaviour
 
         MonsterSpawnArea[] spawnLocations = GameObject.FindObjectsOfType<MonsterSpawnArea>();
 
-        float modifier = 0.021f;
+        float modifier = 0.02f;
         float total = 0;
         foreach (MonsterSpawnArea trigger in spawnLocations)
         {

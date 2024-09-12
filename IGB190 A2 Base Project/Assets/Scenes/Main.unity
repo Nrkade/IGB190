@@ -2566,6 +2566,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954302082401, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 4157343042942318865, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_Name
       value: Room 4
@@ -8125,7 +8133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &623941939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16255,6 +16263,14 @@ PrefabInstance:
     - target: {fileID: 2530420025797128780, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954302082401, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4124517350831407445, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_IsActive
@@ -26643,7 +26659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1806430104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27505,7 +27521,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4491916423622956082, guid: 236407abbb6ac8141829be6f181c1724, type: 3}
       propertyPath: m_text
-      value: W
+      value: 'W
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4491916424078398625, guid: 236407abbb6ac8141829be6f181c1724, type: 3}
       propertyPath: m_text
@@ -29268,8 +29286,8 @@ MonoBehaviour:
     increasedHealthPerPlayerLevel: 0.25
     increasedDamagePerPlayerLevel: 0.25
   _healthGlobeValues:
-    baseHealthGlobeChance: 0
-    reducedChancePerExistingGlobe: 0
+    baseHealthGlobeChance: 0.05
+    reducedChancePerExistingGlobe: 0.01
     spawnRadius: 6
     lifetime: 5
     healthGlobeHealthRestore: 50
@@ -30165,6 +30183,14 @@ PrefabInstance:
     - target: {fileID: 2530420025797128780, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954302082401, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4124517350831407445, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_IsActive
@@ -31272,6 +31298,10 @@ PrefabInstance:
     - target: {fileID: 1883707019183669310, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2723096954302082401, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: spawnDensity
