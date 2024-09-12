@@ -38,7 +38,7 @@ public class OptionsWindow : UIWindow, IPausing, ICloseable
             KeyCode.Mouse0,
             KeyCode.Mouse1,
             KeyCode.Q,
-            KeyCode.W,
+            KeyCode.T,
             KeyCode.E,
             KeyCode.R,
             KeyCode.Space,

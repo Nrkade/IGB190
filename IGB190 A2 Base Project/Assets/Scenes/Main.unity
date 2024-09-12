@@ -7916,7 +7916,7 @@ MonoBehaviour:
   playerGoldText: {fileID: 953769410}
   xpBar: {fileID: 734190709}
   healthGlobeMaterial: {fileID: 2100000, guid: 2bb56c658babbbb44a3aae48cc56a78c, type: 2}
-  resourceGlobeMaterial: {fileID: 2100000, guid: 897f6ac202914ba41a82bf5960c98a76, type: 2}
+  resourceGlobeMaterial: {fileID: 2100000, guid: b8286c3806406a74eaa1c5a1ac724e39, type: 2}
   healthBar: {fileID: 543590529}
   resourceBar: {fileID: 1366455516}
 --- !u!1 &604799144
