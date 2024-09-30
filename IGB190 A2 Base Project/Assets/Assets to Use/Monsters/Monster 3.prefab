@@ -99,7 +99,7 @@ MonoBehaviour:
   unitName: Skeleton Executioner
   health: 100
   resource: 0
-  baseDamage: 20
+  baseDamage: 15
   baseAttacksPerSecond: 2
   baseMaxHealth: 100
   baseMaxResource: 100
@@ -111,7 +111,7 @@ MonoBehaviour:
   baseResourceRegen: 0
   baseAttackRange: 2.2
   abilities:
-  - {fileID: 11400000, guid: 78a26e0a386159c468fb4ad26178fd34, type: 2}
+  - {fileID: 11400000, guid: fe4945f21e8f95545a043f8927bac9ca, type: 2}
   lastAbilityCast: {fileID: 0}
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 11400000, guid: 84adead40393a4e4582f15d95dba0ac6, type: 2}
