@@ -28336,10 +28336,10 @@ MonoBehaviour:
   baseAttackRange: 1.75
   abilities:
   - {fileID: 11400000, guid: de0980c92bd43b2469799cc703ac32d6, type: 2}
-  - {fileID: 11400000, guid: 15cc26628715d1042bf6d4cc82b3b097, type: 2}
+  - {fileID: 11400000, guid: acf936780d249464b92c8af7e18ba895, type: 2}
   - {fileID: 11400000, guid: dcf06f73b05311c469df4ff76bc88947, type: 2}
-  - {fileID: 11400000, guid: cfa4a233bb5bddd42839e9b9afd30006, type: 2}
-  - {fileID: 11400000, guid: 54784098e1191e041a2023a5a61f123b, type: 2}
+  - {fileID: 11400000, guid: 27bc941491d31f649885c33ce26eb780, type: 2}
+  - {fileID: 11400000, guid: 13b370f77a16555479ac0724194805ea, type: 2}
   lastAbilityCast: {fileID: 0}
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 0}
