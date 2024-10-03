@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Varoon's Blade
   itemDescription: "A strong weapon from a warrior long gone. Slowly lose health
-    but deal much more damage. \n+50% Attack\n-2% HP/s\n"
+    but deal much more damage. \n+100% Attack\n-20 HP/s\n"
   randomStatCount: 0
-  itemCost: 0
+  itemCost: 2000
   itemIcon: {fileID: 21300000, guid: efc013e3db3ea144c8795366d761c52d, type: 3}
   itemType: 2
-  itemRarity: 0
+  itemRarity: 2
   engine:
     scripts:
     - scriptName: Item Equipped
@@ -30,7 +30,7 @@ MonoBehaviour:
       - rid: 1975754297463800265
       conditionNodes: []
       actionNodes:
-      - rid: 1975754297463800267
+      - rid: 1975754298249445854
     - scriptName: Item Unequipped
       scriptUID: 860048047
       hasWait: 0
@@ -41,8 +41,8 @@ MonoBehaviour:
   template: {fileID: 0}
   guaranteedStats:
   - stat: 0
-    minimum: 0.5
-    maximum: 0.5
+    minimum: 1
+    maximum: 1
     isPercent: 1
   randomisableStats: []
   references:
@@ -120,8 +120,8 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 1
-    - rid: 1975754297463800267
+        value: 0.1
+    - rid: 1975754298249445854
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -130,8 +130,8 @@ MonoBehaviour:
         functionDescription: Unit/Remove Health
         functionDynamicDescription: Remove $ health from $
         functionEvaluators:
-        - rid: 1975754297463800268
-        - rid: 1975754297463800269
+        - rid: 1975754298249445855
+        - rid: 1975754298249445856
         presetName: 
         variableName: 
         stringSuffix: 
@@ -140,17 +140,15 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 1975754297463800268
+    - rid: 1975754298249445855
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 2
+        returnType: 0
         tempName: 
-        functionName: Division
-        functionDescription: Math/Division
-        functionDynamicDescription: $ / $
-        functionEvaluators:
-        - rid: 1975754297463800365
-        - rid: 1975754297463800366
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
         presetName: 
         variableName: 
         stringSuffix: 
@@ -159,8 +157,8 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 100
-    - rid: 1975754297463800269
+        value: 2
+    - rid: 1975754298249445856
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -178,96 +176,3 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
-    - rid: 1975754297463800365
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: Number
-        functionName: UnitMaxHealth
-        functionDescription: Unit/Unit Max Health
-        functionDynamicDescription: $ Max Health
-        functionEvaluators:
-        - rid: 1975754297463800442
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 2
-    - rid: 1975754297463800366
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: Multiplication
-        functionDescription: Math/Multiplication
-        functionDynamicDescription: $ x $
-        functionEvaluators:
-        - rid: 1975754297463800485
-        - rid: 1975754297463800486
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 1
-    - rid: 1975754297463800442
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
-    - rid: 1975754297463800485
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Number
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 100
-    - rid: 1975754297463800486
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 2

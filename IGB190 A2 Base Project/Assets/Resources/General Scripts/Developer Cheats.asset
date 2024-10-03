@@ -76,9 +76,168 @@ MonoBehaviour:
       actionNodes:
       - rid: 3369304126382145984
       - rid: 3369304544840515902
+    - scriptName: give player item, change as debugging
+      scriptUID: 1449342981
+      hasWait: 0
+      eventNodes:
+      - rid: 1975754298249445740
+      conditionNodes:
+      - rid: 1975754298249445742
+      actionNodes:
+      - rid: 1975754298249445744
   references:
     version: 2
     RefIds:
+    - rid: 1975754298249445740
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnKeyDown
+        functionDescription: Input/On Key Down
+        functionDynamicDescription: When the $ key is pressed down
+        functionEvaluators:
+        - rid: 1975754298249445741
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Keyboard
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 1975754298249445741
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Key
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: L
+        options: []
+    - rid: 1975754298249445742
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: KeyIsHeld
+        functionDescription: Input/Key is Held
+        functionDynamicDescription: $ is Held
+        functionEvaluators:
+        - rid: 1975754298249445743
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Keyboard
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 1975754298249445743
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Key
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: LeftControl
+        options: []
+    - rid: 1975754298249445744
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SpawnItemDrop
+        functionDescription: Pickups/Spawn Item Pickup
+        functionDynamicDescription: Spawn an item pickup at $ containing $
+        functionEvaluators:
+        - rid: 1975754298249445745
+        - rid: 1975754298249445746
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Pickup
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1975754298249445745
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Location
+        functionName: PositionOfUnit
+        functionDescription: Unit/Position of Unit
+        functionDynamicDescription: Position of $
+        functionEvaluators:
+        - rid: 1975754298249445767
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}
+    - rid: 1975754298249445746
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 7f37a00e743cd2648b6e2b7167070da9, type: 2}
+    - rid: 1975754298249445767
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
     - rid: 3369304126382145542
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:

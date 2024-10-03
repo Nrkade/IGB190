@@ -18,12 +18,12 @@ MonoBehaviour:
   abilityIcon: {fileID: 21300000, guid: cc687f3e871f61c42911c09c98710181, type: 3}
   targetMode: 0
   abilityDescription: Using 30 Trickery, throw knives all around you, five times,
-    in quick succession. Deals low damage.
+    in quick succession. Deals low damage. Steals a moderate amount of gold.
   abilityAnimation: None
   range: 20
   castTime: 0.2
   abilityCooldown: 10
-  abilityCost: 30
+  abilityCost: 25
   movementLock: 1
   animationActivationPosition: 0.5
   canMoveWhileCasting: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
   cooldownIsAtackSpeed: 0
   abilityGeneratesResource: 0
   requiresLineOfSight: 1
-  canUpdateTargetWhileCasting: 1
+  canUpdateTargetWhileCasting: 0
   castAtClosestPointInRange: 1
   castCompleteSound: {fileID: 8300000, guid: d431758d9381dd8448702a22c11f9c01, type: 3}
   castCompleteSoundVolume: 0.54
@@ -60,6 +60,7 @@ MonoBehaviour:
           - rid: 1975754297463799888
           - rid: 1975754297463799891
           - rid: 1975754297463800080
+          - rid: 1975754298249445383
           - rid: 1975754297463800199
         - scriptName: Terrain Collision
           scriptUID: 1962167505
@@ -818,3 +819,191 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 0.2
+    - rid: 1975754298249445383
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddGold
+        functionDescription: Player/Add Gold
+        functionDynamicDescription: Add $ gold to the player
+        functionEvaluators:
+        - rid: 1975754298249445384
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 1
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1975754298249445384
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Number
+        functionName: Division
+        functionDescription: Math/Division
+        functionDynamicDescription: $ / $
+        functionEvaluators:
+        - rid: 1975754298249445385
+        - rid: 1975754298249445386
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 1975754298249445385
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Number
+        functionName: UnitMaxHealth
+        functionDescription: Unit/Unit Max Health
+        functionDynamicDescription: $ Max Health
+        functionEvaluators:
+        - rid: 1975754298249445387
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 1975754298249445386
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: Multiplication
+        functionDescription: Math/Multiplication
+        functionDynamicDescription: $ x $
+        functionEvaluators:
+        - rid: 1975754298249445388
+        - rid: 1975754298249445389
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 1975754298249445387
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Unit
+        functionName: ClosestUnitToPoint
+        functionDescription: Distance/Closest Unit Near Point
+        functionDynamicDescription: Closest unit within $ distance of $
+        functionEvaluators:
+        - rid: 1975754298249445586
+        - rid: 1975754298249445587
+        presetName: Target Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+    - rid: 1975754298249445388
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Number
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 100
+    - rid: 1975754298249445389
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0.8
+    - rid: 1975754298249445586
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Number
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: m
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 5
+    - rid: 1975754298249445587
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Location
+        functionName: PositionOfUnit
+        functionDescription: Unit/Position of Unit
+        functionDynamicDescription: Position of $
+        functionEvaluators:
+        - rid: 1975754298249445594
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}
+    - rid: 1975754298249445594
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}

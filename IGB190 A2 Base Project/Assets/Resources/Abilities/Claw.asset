@@ -154,16 +154,18 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2
+        value: 1
     - rid: 1975754297463800588
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
         tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
+        functionName: RandomEnemyNearUnit
+        functionDescription: Random Enemy Near Unit
+        functionDynamicDescription: Closest enemy within $ of $
+        functionEvaluators:
+        - rid: 1975754298249445703
+        - rid: 1975754298249445704
         presetName: Target Unit
         variableName: 
         stringSuffix: 
@@ -173,6 +175,42 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+    - rid: 1975754298249445703
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 3
+        tempName: Number
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: m
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 1975754298249445704
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 3
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
     - rid: 3369304544840515810
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:
