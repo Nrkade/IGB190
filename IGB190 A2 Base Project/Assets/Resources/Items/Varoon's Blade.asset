@@ -26,7 +26,6 @@ MonoBehaviour:
       scriptUID: 1889718583
       hasWait: 0
       eventNodes:
-      - rid: 1975754297463800201
       - rid: 1975754297463800265
       conditionNodes: []
       actionNodes:
@@ -48,24 +47,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1975754297463800201
-      type: {class: EventNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: ScriptLoaded
-        functionDescription: Time/On script loaded
-        functionDynamicDescription: On script loaded
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Timer
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        presets: []
     - rid: 1975754297463800202
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
