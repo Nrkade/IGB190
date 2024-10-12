@@ -10,92 +10,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Amethyst Ring
+  m_Name: Horns Of Azemoth
   m_EditorClassIdentifier: 
-  itemName: Amethyst Ring
-  itemDescription: 
-  randomStatCount: 1
-  itemCost: 600
-  itemIcon: {fileID: 21300000, guid: 74147d83c76aa6945ae2be73712532e1, type: 3}
-  itemType: 0
-  itemRarity: 0
+  itemName: Horns Of Azemoth
+  itemDescription: 'Weapon of a great, heavy giant. Slows the player greatly but
+    heightens their chance of stronger attacks.
+
+'
+  randomStatCount: 0
+  itemCost: 2500
+  itemIcon: {fileID: 21300000, guid: b889977d2d3526e46a38f6d22c54ae1e, type: 3}
+  itemType: 2
+  itemRarity: 2
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 23863673
+      scriptUID: 516932138
       hasWait: 0
       eventNodes:
-      - rid: 297216941779845122
+      - rid: 297216966914474114
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1582907360
+      scriptUID: 4535907
       hasWait: 0
       eventNodes:
-      - rid: 297216941779845123
-      conditionNodes: []
-      actionNodes: []
-    - scriptName: Main
-      scriptUID: 1106378311
-      hasWait: 0
-      eventNodes: []
+      - rid: 297216966914474117
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
   guaranteedStats:
-  - stat: 9
-    minimum: 0.14
-    maximum: 0.18
-    isPercent: 1
-  randomisableStats:
-  - stat: 0
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
-  - stat: 1
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
   - stat: 3
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
-  - stat: 4
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
-  - stat: 5
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
-  - stat: 6
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
-  - stat: 7
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
-  - stat: 8
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
-  - stat: 9
-    minimum: 0.1
-    maximum: 0.15
+    minimum: -0.5
+    maximum: -0.5
     isPercent: 1
   - stat: 10
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.5
+    maximum: 0.5
     isPercent: 0
   - stat: 11
-    minimum: 0.2
-    maximum: 0.25
+    minimum: 0.5
+    maximum: 0.5
     isPercent: 0
+  randomisableStats: []
   references:
     version: 2
     RefIds:
-    - rid: 297216941779845122
+    - rid: 297216966914474114
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -113,7 +74,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 297216941779845123
+    - rid: 297216966914474117
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

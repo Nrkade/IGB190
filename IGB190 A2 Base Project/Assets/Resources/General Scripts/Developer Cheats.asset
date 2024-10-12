@@ -219,7 +219,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 11400000, guid: 401e281e6b29dd241b4f47a69e239141, type: 2}
+        value: {fileID: 11400000, guid: 4373d02f9d037ed4993b0d51c41eed6e, type: 2}
     - rid: 1975754298249445767
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:

@@ -26,7 +26,8 @@ MonoBehaviour:
       hasWait: 0
       eventNodes:
       - rid: 248813236419559491
-      conditionNodes: []
+      conditionNodes:
+      - rid: 297216966914474131
       actionNodes: []
     - scriptName: Item Unequipped
       scriptUID: 378403594
@@ -77,3 +78,40 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
+    - rid: 297216966914474131
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: PlayerHasItemEquipped
+        functionDescription: Player/Player Has Item Equipped
+        functionDynamicDescription: Player has $ equipped
+        functionEvaluators:
+        - rid: 297216966914474132
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Condition
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 297216966914474132
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 3
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}

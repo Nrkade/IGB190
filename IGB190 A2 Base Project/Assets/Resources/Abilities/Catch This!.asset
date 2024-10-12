@@ -17,7 +17,7 @@ MonoBehaviour:
   abilityName: Catch This!
   abilityIcon: {fileID: 21300000, guid: de6faf741a2fc054b855d929d52a75cf, type: 3}
   targetMode: 4
-  abilityDescription: Throw 6 knives in a short burst in front of you, dealing 150%
+  abilityDescription: Throw 6 knives in a short burst in front of you, dealing 100%
     damage each. Steals a high amount of gold.
   abilityAnimation: One Hand Slash
   range: 20
@@ -620,7 +620,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 150
+        value: 100
     - rid: 1975754297065078814
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
