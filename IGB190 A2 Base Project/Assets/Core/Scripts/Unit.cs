@@ -99,12 +99,16 @@ public class Unit : Interactable
         // Apply damage modifiers (e.g. a -50% damage taken buff).
         amount *= GetBaseDamageTakenModifier();
 
-        const float randomFactor = 0.05f;
+        const float randomFactor = 0.05f; //adds randomness to the damage taken
         amount *= (1 + Random.Range(-randomFactor, randomFactor));
 
-        float armor = stats[Stat.Armor].GetValue();
-        float constant = 100f; // Choose your value here.
+        float armor = stats[Stat.Armor].GetValue(); //reduces damage taken, based on armor
+        float constant = 75f; 
+
+        //Debug.Log("Before Reduction Amount:" + amount);
         amount = amount * (1 - armor / (armor + constant));
+        //Debug.Log("After Reduction Amount:" + amount);
+        
 
         // Return the modified amount.
         return amount;

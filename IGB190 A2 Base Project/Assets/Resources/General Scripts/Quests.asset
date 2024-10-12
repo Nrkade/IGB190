@@ -111,9 +111,9 @@ MonoBehaviour:
       actionNodes:
       - rid: 297216966914474094
       - rid: 297216966914474097
-      - rid: 297216966914474099
       - rid: 297216966914474106
       - rid: 297216966914474112
+      - rid: 297216966914474099
   references:
     version: 2
     RefIds:

@@ -5009,6 +5009,7 @@ MonoBehaviour:
   baseAttackRange: 2.2
   abilities:
   - {fileID: 11400000, guid: a754a6374a0c8674cbcc3b4c8912ec17, type: 2}
+  - {fileID: 11400000, guid: a27cc724852c43942a95a57e9ebe337b, type: 2}
   lastAbilityCast: {fileID: 0}
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 11400000, guid: 84adead40393a4e4582f15d95dba0ac6, type: 2}

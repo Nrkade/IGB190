@@ -30,6 +30,7 @@ public class Item : ScriptableObject, IEngineHandler
     [NonSerialized] public List<RolledStatValue> rolledStatValues = new List<RolledStatValue>();
 
     private static Dictionary<ItemRarity, List<Item>> itemLootTable;
+    private static readonly Color trashItemColor = Color.gray;
     private static readonly Color commonItemColor = new Color(0.12f, 1.0f, 0.0f);
     private static readonly Color rareItemColor = Color.yellow;
     private static readonly Color legendaryItemColor = new Color(1.0f, 0.5f, 0.0f);
@@ -41,6 +42,7 @@ public class Item : ScriptableObject, IEngineHandler
     /// </summary>
     public enum ItemRarity
     {
+        Trash,
         Common,
         Rare,
         Legendary
@@ -66,6 +68,7 @@ public class Item : ScriptableObject, IEngineHandler
     {
         return itemRarity switch
         {
+            ItemRarity.Trash => trashItemColor,
             ItemRarity.Common => commonItemColor,
             ItemRarity.Rare => rareItemColor,
             ItemRarity.Legendary => legendaryItemColor,
@@ -273,7 +276,7 @@ public class Item : ScriptableObject, IEngineHandler
     /// <summary>
     /// Rolls for a potential item drop based on the given chances for each rarity.
     /// </summary>
-    public static Item RollForItemDrop(float commonChance = 0.03f, float rareChance = 0.01f, float legendaryChance = 0.005f)
+    public static Item RollForItemDrop(float trashChance = 0.00f, float commonChance = 0.03f, float rareChance = 0.01f, float legendaryChance = 0.005f)
     {
         GenerateLootTable();
         if (Random.value <= legendaryChance)
@@ -282,6 +285,8 @@ public class Item : ScriptableObject, IEngineHandler
             return GetRandomItemOfRarity(ItemRarity.Rare);
         if (Random.value <= commonChance)
             return GetRandomItemOfRarity(ItemRarity.Common);
+        if (Random.value <= trashChance)
+            return GetRandomItemOfRarity(ItemRarity.Trash);
         return null;
     }
 
@@ -292,6 +297,7 @@ public class Item : ScriptableObject, IEngineHandler
     {
         return rarity switch
         {
+            ItemRarity.Trash => trashItemColor,
             ItemRarity.Common => commonItemColor,
             ItemRarity.Rare => rareItemColor,
             ItemRarity.Legendary => legendaryItemColor,
