@@ -28,7 +28,7 @@ MonoBehaviour:
   abilityCost: 2.5
   movementLock: 1
   animationActivationPosition: 0.3
-  canMoveWhileCasting: 0
+  canMoveWhileCasting: 1
   hasSpecificCastTime: 0
   cooldownIsAtackSpeed: 1
   abilityGeneratesResource: 1

@@ -727,4 +727,4 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 0.1
+        value: 0.5
