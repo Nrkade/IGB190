@@ -43,20 +43,20 @@ MonoBehaviour:
     isPercent: 0
   randomisableStats:
   - stat: 8
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 5
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 7
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 3
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   references:
     version: 2

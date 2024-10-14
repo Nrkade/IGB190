@@ -672,7 +672,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 50
+        value: 33
     - rid: 1975754297463800082
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:

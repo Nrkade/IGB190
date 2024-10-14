@@ -25,7 +25,7 @@ MonoBehaviour:
   range: 2
   castTime: 0
   abilityCooldown: 0.1
-  abilityCost: 2.5
+  abilityCost: 2
   movementLock: 1
   animationActivationPosition: 0.3
   canMoveWhileCasting: 1
@@ -166,7 +166,7 @@ MonoBehaviour:
         functionEvaluators:
         - rid: 1975754298249445703
         - rid: 1975754298249445704
-        presetName: Target Unit
+        presetName: Casting Unit
         variableName: 
         stringSuffix: 
         indent: 0

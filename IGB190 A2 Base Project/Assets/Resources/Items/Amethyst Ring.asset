@@ -49,44 +49,44 @@ MonoBehaviour:
     isPercent: 1
   randomisableStats:
   - stat: 0
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 1
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 3
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 4
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 5
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 6
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 7
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 8
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 9
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 1
   - stat: 10
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 0
   - stat: 11
     minimum: 0.2
