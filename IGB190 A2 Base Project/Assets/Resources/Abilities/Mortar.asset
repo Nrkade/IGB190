@@ -22,7 +22,7 @@ MonoBehaviour:
   abilityAnimation: Bow Shoot
   range: 8
   castTime: 0.1
-  abilityCooldown: 5
+  abilityCooldown: 7.5
   abilityCost: 0
   movementLock: 1
   animationActivationPosition: 0.5
@@ -524,7 +524,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 500
+        value: 175
     - rid: 297217016758010060
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:

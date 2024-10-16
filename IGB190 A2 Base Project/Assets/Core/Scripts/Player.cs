@@ -222,6 +222,10 @@ public class Player : Unit
     /// </summary>
     private void HandleMovement ()
     {
+
+        float horInput = Input.GetAxis("Horizontal");
+        float verInput = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(horInput, 0f, verInput);
         // If the player cannot move, 
         if (!CanMove())
         {
@@ -248,27 +252,29 @@ public class Player : Unit
             agentNavigation.SetDestination(targetPosition);
         }
 
-        // If left click is not an ability keybind, move as normal.
+        /*// If left click is not an ability keybind, move as normal.
         else if (leftClickAbility == null && Input.GetMouseButton(LEFT))
         {
-            agentNavigation.SetDestination(targetPosition);
-        }
+            agentNavigation.SetDestination(targetPosition + movement);
+        }*/
 
         // No monster selected, move towards target location.
-        else if (Input.GetKey(KeyCode.W) && GameManager.hoveredMonster == null)
+        else if (Input.GetMouseButton(LEFT) && GameManager.hoveredMonster == null)
         {
-            agentNavigation.SetDestination(targetPosition);
+            agentNavigation.SetDestination(targetPosition + movement);
         }
 
         // Move into range of the target.
-        else if (Input.GetKey(KeyCode.W) && GameManager.hoveredMonster != null)
+        else if (Input.GetMouseButton(LEFT) && GameManager.hoveredMonster != null)
         {
             float range = leftClickAbility.GetAbilityRange(this);
             if (Vector3.Distance(transform.position, targetPosition) > range)
-                agentNavigation.SetDestination(targetPosition);
+                agentNavigation.SetDestination(targetPosition + movement);
             else
                 StopMoving();
         }
+
+
 
         // If no other movement commands are given, stop moving.
         else
