@@ -22,6 +22,12 @@ MonoBehaviour:
       conditionNodes:
       - rid: 297217056553304065
       actionNodes: []
+    - scriptName: Player Low HP
+      scriptUID: 680993846
+      hasWait: 0
+      eventNodes: []
+      conditionNodes: []
+      actionNodes: []
   references:
     version: 2
     RefIds:

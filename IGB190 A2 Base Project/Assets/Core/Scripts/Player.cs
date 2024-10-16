@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Player : Unit
 {
@@ -49,6 +50,9 @@ public class Player : Unit
     private const string RESPAWN_ANIMATION = "Idle";
     private const float PLAYER_ROTATION_SPEED = 5;
     private static Color OUTLINE_COLOR = new Color(0.5f, 0.5f, 1.0f, 0.03f);
+    private const float DamageNumberSpawnVariance = 0.3f;
+    private static readonly Color HitDamageTextColor = Color.red;
+    private const float CriticalDamageNumberScaleMod = 1.5f;
 
     /// <summary>
     /// Perform initial setup.
@@ -122,9 +126,17 @@ public class Player : Unit
         const float helpModifier = 1.0f;
         const float maxDamageReduction = 0.1f;
         float healthPerc = health / stats[Stat.MaxHealth].GetValue();
-        amount *= Mathf.Max(Mathf.Pow(healthPerc, helpModifier), 1.0f - maxDamageReduction);
+        amount *= Mathf.Max(Mathf.Pow(healthPerc, helpModifier), 1.0f - maxDamageReduction);    
         
         base.TakeDamage(amount, isCritical, damagingUnit, damageSource);
+
+        if (GameManager.settings.showDamageNumbers) //Displays the damage taken of the player.
+        {
+            Vector3 spawnPos = transform.position + Vector3.up + Random.insideUnitSphere * DamageNumberSpawnVariance;
+            Color color = HitDamageTextColor;
+            float scale = 1.5f;
+            StatusMessageUI.Spawn(spawnPos, Mathf.Max(0, Mathf.Round(amount)).ToString(), color, scale);
+        }
     }
 
     /// <summary>
