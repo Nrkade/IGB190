@@ -1502,7 +1502,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Point and use the "W" key to move
+        value: Point and use the "Left Mouse" key to move
         options: []
     - rid: 3369304498077433865
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
@@ -1671,7 +1671,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: W
+        value: Mouse0
         options: []
     - rid: 3369304498077433882
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
@@ -2378,7 +2378,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: Look where you want to go with your Mouse, then proceed forward with
-          "W"
+          "Left Mouse Button""
         options: []
     - rid: 3369304544840515882
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
