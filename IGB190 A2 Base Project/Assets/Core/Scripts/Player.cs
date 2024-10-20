@@ -54,6 +54,10 @@ public class Player : Unit
     private static readonly Color HitDamageTextColor = Color.red;
     private const float CriticalDamageNumberScaleMod = 1.5f;
 
+    // Killer walls
+    public List<Collider> killerWalls;
+    private bool isCollidingWithWall = false;
+
     /// <summary>
     /// Perform initial setup.
     /// </summary>
@@ -66,6 +70,8 @@ public class Player : Unit
         SetupPlayerInventory();
         SetupEquipment();
         SetupSellSlot();
+
+        killerWalls = new List<Collider>();
     }
 
     /// <summary>
@@ -80,6 +86,35 @@ public class Player : Unit
             UpdateTarget();
             HandleMovement();
             HandleRotation();
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        // Check if the collider belongs to a wall
+        if (other.CompareTag("Wall"))
+        {
+            // Add the wall to the list of touching walls if not already present
+            if (!killerWalls.Contains(other))
+            {
+                killerWalls.Add(other);
+            }
+
+            // Check if touching more than one wall
+            if (killerWalls.Count > 1)
+            {
+                health = 0;
+                Kill(this, null, true);
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        // Remove the wall from the list when the player exits the collider
+        if (other.CompareTag("Wall"))
+        {
+            killerWalls.Remove(other);
         }
     }
 

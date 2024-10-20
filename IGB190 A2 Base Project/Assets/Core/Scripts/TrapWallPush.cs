@@ -1,14 +1,19 @@
 using UnityEngine;
+using System.Collections.Generic; // For using HashSet
 
 public class TrapWallPush : MonoBehaviour
 {
     public float pushDistance = 1f; // Distance to push the player away from the wall
 
+    public Player player;
+
+    // To track walls the player is touching
+    private HashSet<Collider> wallsTouchingPlayer = new HashSet<Collider>();
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Ensure the collider is the player
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("Player is colliding");
             // Calculate the direction to push the player away from the wall
             Vector3 pushDirection = (other.transform.position - transform.position).normalized;
 
@@ -17,8 +22,6 @@ public class TrapWallPush : MonoBehaviour
 
             // Move the player to the new position
             other.transform.position = newPosition;
-
-            Debug.Log("Player has been moved back");
         }
     }
 }
